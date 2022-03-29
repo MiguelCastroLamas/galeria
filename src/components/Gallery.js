@@ -1,11 +1,10 @@
+import Result from "./Result";
+
 function Gallery() {
   return (
     <div className="gallery">
       <ul>
-        <li>a</li>
-        <li>b</li>
-        <li>c</li>
-        <li>d</li>
+        <Result></Result>
       </ul>
     </div>
   );
