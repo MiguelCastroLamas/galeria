@@ -1,9 +1,7 @@
-import image from "./../image.png";
-
-function Image() {
+function Image({ image, nombre = "Not found" }) {
   return (
     <>
-      <img src={image} alt="imagen"></img>
+      <img src={image} alt={nombre}></img>
     </>
   );
 }

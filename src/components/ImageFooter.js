@@ -1,8 +1,8 @@
-function ImageFooter() {
+function ImageFooter({ text }) {
   return (
     <>
       <footer>
-        <p>1</p>
+        <p>{text}</p>
       </footer>
     </>
   );
