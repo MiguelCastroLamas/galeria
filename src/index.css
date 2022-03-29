@@ -18,3 +18,27 @@ input {
   border-radius: 20px;
   outline: none;
 }
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.gallery {
+  margin-top: 50px;
+}
+
+.gallery ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  -ms-align-items: flex-start;
+  align-items: flex-start;
+}
+
+.gallery ul li {
+  width: 220px;
+  height: 165px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
