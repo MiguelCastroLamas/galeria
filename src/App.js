@@ -1,19 +1,35 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 import Gallery from "./components/Gallery";
 import Search from "./components/Search";
 
+const imageTexts = [
+  "Primera imagen",
+  "Segunda imagen",
+  "Tercera imagen",
+  "Cuarta imagen",
+];
+
 function App() {
   const [searchText, setSearchText] = useState("");
+  const [searchResults, setSearchResults] = useState([]);
+
   const onHandleChange = (event) => {
     setSearchText(event.target.value);
-    console.log("Se ejecuta el onChange del input de busqueda", searchText);
   };
+
+  useEffect(() => {
+    const results = imageTexts.filter(
+      (text) =>
+        searchText.trim() === "" || text.toLowerCase().includes(searchText)
+    );
+    setSearchResults(results);
+  }, [searchText]);
 
   return (
     <div>
       <Search handleChange={onHandleChange} searchText={searchText}></Search>
-      <Gallery></Gallery>
+      <Gallery results={searchResults}></Gallery>
     </div>
   );
 }

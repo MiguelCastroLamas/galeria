@@ -1,10 +1,12 @@
 import Result from "./Result";
 
-function Gallery() {
+function Gallery({ results }) {
   return (
     <div className="gallery">
       <ul>
-        <Result></Result>
+        {results.map((text) => (
+          <Result key={text} text={text}></Result>
+        ))}
       </ul>
     </div>
   );
