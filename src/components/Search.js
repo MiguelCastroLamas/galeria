@@ -1,12 +1,12 @@
-function Search({ clickHandler }) {
+function Search({ searchText, handleChange }) {
   return (
     <form>
       <input
         type="text"
         name="search"
         placeholder="Search..."
-        defaultValue=""
-        onClick={clickHandler}
+        value={searchText}
+        onChange={handleChange}
       />
     </form>
   );
