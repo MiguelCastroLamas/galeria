@@ -1,31 +1,24 @@
 import Image from "./Image";
+import ImageFooter from "./ImageFooter";
 
 function Result() {
   return (
     <>
       <li>
         <Image></Image>
-        <footer>
-          <p>1</p>
-        </footer>
+        <ImageFooter></ImageFooter>
       </li>
       <li>
         <Image></Image>
-        <footer>
-          <p>2</p>
-        </footer>
+        <ImageFooter></ImageFooter>
       </li>
       <li>
         <Image></Image>
-        <footer>
-          <p>3</p>
-        </footer>
+        <ImageFooter></ImageFooter>
       </li>
       <li>
         <Image></Image>
-        <footer>
-          <p>4</p>
-        </footer>
+        <ImageFooter></ImageFooter>
       </li>
     </>
   );
