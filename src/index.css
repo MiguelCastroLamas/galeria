@@ -1,0 +1,20 @@
+body {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
+
+form {
+  max-width: 400px;
+  display: flex;
+  margin: 0 auto;
+}
+
+input {
+  font-size: 20px;
+  width: 100%;
+  background-color: #d7e1e6;
+  padding: 10px 15px;
+  border: 0;
+  border-radius: 20px;
+  outline: none;
+}
