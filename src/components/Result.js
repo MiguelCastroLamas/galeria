@@ -1,28 +1,28 @@
-import image from "./../image.png";
+import Image from "./Image";
 
 function Result() {
   return (
     <>
       <li>
-        <img src={image} alt="imagen"></img>
+        <Image></Image>
         <footer>
           <p>1</p>
         </footer>
       </li>
       <li>
-        <img src={image} alt="imagen"></img>
+        <Image></Image>
         <footer>
           <p>2</p>
         </footer>
       </li>
       <li>
-        <img src={image} alt="imagen"></img>
+        <Image></Image>
         <footer>
           <p>3</p>
         </footer>
       </li>
       <li>
-        <img src={image} alt="imagen"></img>
+        <Image></Image>
         <footer>
           <p>4</p>
         </footer>
