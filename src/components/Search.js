@@ -1,4 +1,4 @@
-function Search() {
+function Search({ clickHandler }) {
   return (
     <form>
       <input
@@ -6,6 +6,7 @@ function Search() {
         name="search"
         placeholder="Search..."
         defaultValue=""
+        onClick={clickHandler}
       />
     </form>
   );
